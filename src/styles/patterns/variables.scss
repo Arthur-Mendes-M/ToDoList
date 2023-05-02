@@ -1,0 +1,81 @@
+// GENERIC VARIABLES - (SASS VARIABLES)
+
+// | Transitions
+$allLinear: all .25s linear;
+$allLinearQuick: all .15s linear;
+$allLinearVeryQuick: all .05s ease-out;
+
+
+
+// COLORS - (CSS VARIABLES)
+
+$ArrayColors: (
+    backgrondColor: (
+        dark: (
+            rgb: (31, 31, 31),
+            completeHexa: #1f1f1f
+        ),
+        light: (
+            rgb: (255, 255, 255),
+            completeHexa: #ffffff
+        )
+    ),
+    color: (
+        dark: (
+            rgb: (255, 255, 255),
+            completeHexa: #ffffff
+        ),
+        light: (
+            rgb: (31, 31, 31),
+            completeHexa: #1f1f1f
+        )
+    ),
+    universal: (
+        successGreen: (
+            rgb: (55, 166, 3),
+            completeHexa: #37a603
+        ),
+        dangerRed: (
+            rgb: (189, 8, 8),
+            completeHexa: #bd0808
+        ),
+        infoBlue: (
+            rgb: (7, 131, 188),
+            completeHexa: #0783bc
+        )
+    )
+);
+
+// MIXINS
+
+@mixin createVariables($selectedTheme: dark) {
+    @each $property, $propertyThemes in $ArrayColors {
+        @each $theme, $variations in $propertyThemes {
+            @if ($theme == $selectedTheme) {
+                @each $key, $value in $variations {
+                    --#{$property}-#{$key}: #{$value};
+                }
+            } @else if ($theme != light and $theme != dark and $selectedTheme != light) {
+                @each $key, $value in $variations {
+                    --#{$theme}-#{$key}: #{$value};
+                }
+            }
+        }
+    }
+}
+
+@mixin flexBox($fd: row, $a: center, $j: center, $g: 0, $fw: nowrap, $f: 0 0 auto) {
+    display: flex;
+    flex-direction: $fd;
+    align-items: $a;
+    justify-content: $j;
+    gap: $g;
+    flex-wrap: $fw;
+    flex: $f;  
+}
+
+// FUNCTIONS
+
+@function changeOpacity($variable, $opcacity) {
+    @return rgba($color:$variable, $alpha:$opcacity);
+}

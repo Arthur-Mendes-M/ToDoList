@@ -1,0 +1,36 @@
+@import './patterns/generalPattern.scss';
+
+#toDoList {
+    width: 80%;
+    max-width: 500px;
+    padding: 1rem;
+    border: 1px solid changeOpacity(var(--color-rgb), .4);
+    border-radius: .3rem;
+
+    .toDoItem {
+        @include flexBox($j: space-between, $g: 1rem, $fw: wrap);
+        padding: .5rem 1rem;
+        overflow: hidden;
+
+        .toDoDetails {
+            @include flexBox($fd: column, $a: flex-start);
+            // width: 100%;
+            // Arrumar o limite de largura do elemento
+            max-width: 100%;
+
+            // .title {
+            //     word-wrap: break-word;
+            // }
+
+            .description {
+                font-style: italic;
+                max-width: 200px;
+            }
+        }
+
+        .options {           
+            @include flexBox($g: 1.5rem, $fw: wrap);
+            
+        }
+    }
+}

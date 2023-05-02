@@ -1,0 +1,24 @@
+@import 'variables.scss';
+@import 'resets.scss';
+
+:root {
+    @include createVariables();
+    font-size: 18px;
+
+    transition: $allLinearVeryQuick;
+}
+
+:root.lightTheme {
+    @include createVariables(light);
+}
+
+body {
+    background: var(--backgrondColor-completeHexa);
+    color: changeOpacity(var(--color-rgb), .5);
+    padding: 5% 0;
+}
+
+#root {
+    @include flexBox($fd: column, $g: .5rem);
+    text-align: center;
+}
