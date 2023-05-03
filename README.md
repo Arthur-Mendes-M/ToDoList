@@ -76,7 +76,7 @@ https://user-images.githubusercontent.com/75858153/235903645-f9d85b72-dab0-4d3a-
 <p>Remove all square brackets 👉 [ ] in the codes<p>
 
 
-<h4>| Clone this repo</h4>
+<h4 id="initializing">| Clone this repo</h4>
 <p><i>Open the terminal, on your chosen path</i></p>
 
 ```
@@ -90,7 +90,7 @@ https://user-images.githubusercontent.com/75858153/235903645-f9d85b72-dab0-4d3a-
   npm install
 ```
 
-<h4>| Runing the json server</h4>
+<h4 id="dependencies">| Runing the json server</h4>
 <p><i>Json server is mock server for manage json "database"</i></p>
 
 ```
