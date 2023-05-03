@@ -1,7 +1,11 @@
 <img src="./githubAssets/logoAzul.svg" alt="Personal logo" id="about" width="60" />
-<h1>Title</h1>
+<h1>To Do List</h1>
 
-<p>Description</p>
+<p>
+  In this project, the goal is fixing my react learning with a simple to do list application.
+
+  I created this project focusing in study react, so all things are simple, the styles and database for example.
+</p>
 
 <h4>Project status</h4>
 
@@ -39,23 +43,16 @@
 
 <ul>
   <li>
-    <h4>Feature 1</h4>
-    <p>Simple description</p>
+    <h4>View all created "To Do"</h4>
+    <p>In this app, the database is simulated, so all "To do" are shared.</p>
   </li>
 
   <li>
-    <h4>Feature 2</h4>
-    <p>Simple description</p>
+    <h4>Create new "To Do"</h4>
   </li>
 
   <li>
-    <h4>Feature 3</h4>
-    <p>Simple description</p>
-  </li>
-
-  <li>
-    <h4>Feature 4</h4>
-    <p>Simple description</p>
+    <h4>View all details for a specific "To Do"</h4>
   </li>
 </ul>
 
@@ -101,28 +98,28 @@
 <p><i>Open the terminal, on your chosen path</i></p>
 
 ```
-  git clone [repo link]
+  git clone https://github.com/Arthur-Mendes-M/Fixing-react-learning.git
 ```
 
-<h4>| Next step</h4>
-<p><i>If necessary, describe this step</i></p>
+<h4>| Install npm</h4>
+<p><i>If you haven't installed npm previously, do this step</i></p>
 
 ```
-  next command
+  npm install
 ```
 
-<h4>| Next step</h4>
-<p><i>If necessary, describe this step</i></p>
+<h4>| Runing the json server</h4>
+<p><i>Json server is mock server for manage json "database"</i></p>
 
 ```
-  next command
+  npm run start
 ```
 
-<h4>| Next step</h4>
-<p><i>If necessary, describe this step</i></p>
+<h4>| Now, runing react</h4>
+<p><i>To view the application, run this command and open the local link</i></p>
 
 ```
-  next command
+  npm run dev
 ```
 
 <br />
@@ -149,10 +146,10 @@
   <a href="google.com">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="50"/> 
   </a> 
-  <a href="google.com">
+  <!-- <a href="google.com">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"/> 
-  </a> 
-  <a href="google.com">
+  </a>  -->
+  <!-- <a href="google.com">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50"/> 
   </a> 
   <a href="google.com">
@@ -160,7 +157,7 @@
   </a> 
   <a href="google.com">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="50"/> 
-  </a>
+  </a> -->
 </div>
 
 <br />
