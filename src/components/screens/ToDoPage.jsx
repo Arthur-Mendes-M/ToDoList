@@ -13,7 +13,7 @@ const ToDoPage = () => {
 
     getAllToDo().then(data => {
         const result = data.filter(item => item.id == id)[0]
-
+        // Resolve this recursive request
         if(!result) {
             navigate('/')
         }
