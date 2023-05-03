@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PreviousButton } from "../shared/Buttons/PreviousButton";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -11,15 +11,17 @@ const ToDoPage = () => {
     const {id} = useParams()
     const navigate = useNavigate()
 
-    getAllToDo().then(data => {
-        const result = data.filter(item => item.id == id)[0]
-        // Resolve this recursive request
-        if(!result) {
-            navigate('/')
-        }
+    useEffect(() => {
+        getAllToDo().then(data => {
+            const result = data.filter(item => item.id == id)[0]
 
-        setToDo(result)
-    })
+            if(!result) {
+                navigate('/')
+            }
+    
+            setToDo(result)
+        })
+    }, [])
 
     return (
         <>
