@@ -57,7 +57,7 @@
 </h2>
 
 <div>
-  https://user-images.githubusercontent.com/75858153/235901812-b508aad1-2bad-4083-92ef-f69ef29f2da8.mov
+  <!-- The embed -->
 </div>
 
 <br />
