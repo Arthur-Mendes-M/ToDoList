@@ -15,14 +15,6 @@
 <br />
 <h2>👣 Content guide</h2>
 
-<!-- 
-  Possible Changes 
-  
-   *[Preview](#preview) 
-   * [Deploy](#deploy)
- 
- -->
-
 * [About](#about)
 * [Features](#features)
 * [Design](#design)
@@ -65,21 +57,8 @@
 </h2>
 
 <div>
-  <figure>
-    <img alt="Design photo" src="https://source.unsplash.com/random"/>
-    <figcaption>
-      <h4 align="center">Screen title</h4>
-      <p>Screen description</p>
-    </figcaption>
-  </figure>
-
-  <figure>
-    <img alt="Design photo" src="https://source.unsplash.com/random"/>
-    <figcaption>
-      <h4 align="center">Screen title</h4>
-      <p>Screen description</p>
-    </figcaption>
-  </figure>
+  <video src="./githubAssets/media/preview.mov" controls poster="./githubAssets/media/emptyLanding.png">
+  </video>
 </div>
 
 <br />
@@ -146,18 +125,6 @@
   <a href="google.com">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="50"/> 
   </a> 
-  <!-- <a href="google.com">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"/> 
-  </a>  -->
-  <!-- <a href="google.com">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50"/> 
-  </a> 
-  <a href="google.com">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="50"/> 
-  </a> 
-  <a href="google.com">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="50"/> 
-  </a> -->
 </div>
 
 <br />
