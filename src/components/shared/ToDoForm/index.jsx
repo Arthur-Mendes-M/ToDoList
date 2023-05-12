@@ -1,9 +1,14 @@
 import React, { useState } from "react";
+import { styled } from "styled-components";
 
 const initialFields = {
     name: '',
     description: ''
 }
+
+const Form = styled.form`
+    /* background-color: #e2850b; */
+`;
 
 const ToDoForm = (props) => {
     const [fields, setFields] = useState(initialFields)
@@ -28,17 +33,19 @@ const ToDoForm = (props) => {
     }
 
     return (
-        <form onSubmit={createNewToDoItem}>
-            <div className="field">
-                <input type="text" name="name" id="name" placeholder="Título da tarefa" value={fields.name} onChange={handleFields} required autoFocus />
-            </div>
+        <>
+            <Form onSubmit={createNewToDoItem}>
+                <div className="field">
+                    <input type="text" name="name" id="name" placeholder="Título da tarefa" value={fields.name} onChange={handleFields} required autoFocus />
+                </div>
 
-            <div className="field">
-                <textarea type="text" name="description" id="description" placeholder="Descrição da tarefa" value={fields.description} onChange={handleFields} /> 
-            </div>
+                <div className="field">
+                    <textarea type="text" name="description" id="description" placeholder="Descrição da tarefa" value={fields.description} onChange={handleFields} /> 
+                </div>
 
-            <input type="submit" value='Criar' className="submitInput" />
-        </form>
+                <input type="submit" value='Criar' className="submitInput" />
+            </Form>
+        </>
     )
 }
 

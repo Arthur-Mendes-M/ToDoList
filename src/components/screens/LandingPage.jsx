@@ -8,6 +8,10 @@ import { getAllToDo } from "../../patternScripts/managementAPI/getAllToDo";
 import { DeleteButton } from '../shared/Buttons/DeleteButton';
 import { AlterData } from '../shared/Buttons/AlterData'
 
+// import { ThemeProvider } from "styled-components";
+
+import { StyleGlobal } from "./globalStyle";
+
 const LandingPage = () => {
     const [todoList, setToDoList] = useState([])
 
@@ -76,7 +80,9 @@ const LandingPage = () => {
 
     return (
         <>
+            <StyleGlobal />
             <h1>To Do List</h1>
+
             <ToDoForm createNewToDoItem={createNewToDoItem}/>
 
             <div id="toDoList">
