@@ -21,7 +21,7 @@
 * [Guide](#guide)
   * [Initializing the project](#initializing)
   * [Dependencies](#dependencies)
-* [Technologys](#technologys)
+* [Technologies](#technologies)
 * [Autor](#autor)
 * [License](#license)
 
@@ -107,8 +107,8 @@ https://user-images.githubusercontent.com/75858153/235903645-f9d85b72-dab0-4d3a-
 <br />
 <br />
 
-<h2 id="technologys">
-  🛠 Technologys
+<h2 id="technologies">
+  🛠 Technologies
   <div align="right"><a href="#about">🔝</a></div>
 </h2>
 
