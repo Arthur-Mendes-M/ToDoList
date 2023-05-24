@@ -1,9 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// import '../../../styles/components/previousButton.scss'
-import { Button } from "../AlterData/style";
-import { PreviousButtonContainer } from "./style";
+// Styles
+import { AbsoluteTopLeftContainer, PrevButton } from "./style";
 
 const PreviousButton = (props) => {
     const navigate = useNavigate()
@@ -11,21 +10,21 @@ const PreviousButton = (props) => {
     const withContainer =() => {
         if(props.container) {
             return (
-                <PreviousButtonContainer>
-                    <button className={props.class} type="button" onClick={() => navigate(-1)}>
+                <AbsoluteTopLeftContainer>
+                    <PrevButton className="prevButton history" type="button" onClick={() => navigate(-1)}>
                         {
-                            props.content ? props.content : 'Voltar para a página anterior!'
+                            props.children ? props.children : 'Voltar para a página anterior!'
                         }
-                    </button>
-                </PreviousButtonContainer>
+                    </PrevButton>
+                </AbsoluteTopLeftContainer>
             )
         } else {
             return (
-                <Button className={props.class} type="button" onClick={() => navigate(-1)}>
+                <PrevButton className="prevButton history" type="button" onClick={() => navigate(-1)}>
                     {
-                        props.content ? props.content : 'Voltar para a página anterior!'
+                        props.children ? props.children : 'Voltar para a página anterior!'
                     }
-                </Button>
+                </PrevButton>
             )
         }
     }

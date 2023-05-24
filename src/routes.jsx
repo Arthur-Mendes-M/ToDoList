@@ -7,7 +7,7 @@ import { LandingPage } from "./components/screens/LandingPage";
 import { ToDoPage } from "./components/screens/ToDoPage";
 
 const routes = createBrowserRouter([
-    {
+    {   
         path: '/',
         element: <LandingPage/>,
         errorElement: <ErrorPage />

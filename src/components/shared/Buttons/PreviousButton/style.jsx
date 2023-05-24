@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const PreviousButtonContainer = styled.div`
+const AbsoluteTopLeftContainer = styled.div`
     width: fit-content;
     height: fit-content;
     position: absolute;
@@ -9,4 +9,14 @@ const PreviousButtonContainer = styled.div`
     left: 2rem;
 `
 
-export { PreviousButtonContainer }
+const PrevButton = styled.button`
+    &.prevButton {
+        &.history {
+            &:hover svg {
+                transform: rotate(-360deg);
+            }
+        }
+    }
+`
+
+export { AbsoluteTopLeftContainer, PrevButton }

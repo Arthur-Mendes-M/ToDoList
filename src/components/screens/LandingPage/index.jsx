@@ -1,18 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
-import '../../styles/main.scss'
-import { ToDoForm } from "../shared/ToDoForm";
+// Change the global style for a file with ".JSX" extension
+import '../../../styles/main.scss'
 
-import { getAllToDo } from "../../patternScripts/managementAPI/getAllToDo";
+// API
+import { getAllToDo } from "../../../patternScripts/managementAPI/getAllToDo";
 
-import { DeleteButton } from '../shared/Buttons/DeleteButton';
-import { AlterData } from '../shared/Buttons/AlterData'
+// Components
+import { ToDoForm } from "../../shared/ToDoForm";
+import { DeleteButton } from '../../shared/Buttons/DeleteButton';
+import { AlterData } from '../../shared/Buttons/AlterData'
 
-// import { ThemeProvider } from "styled-components";
-
-import { StyleGlobal } from "./globalStyle";
+// Styles
+import { StyledLanding } from "./styles";
+// ContextAPI
+import { ThemeContext } from "../../context/CustomThemeProvider";
 
 const LandingPage = () => {
+    const {theme, handleCurrentTheme} = useContext(ThemeContext)
     const [todoList, setToDoList] = useState([])
 
     useEffect(() => {
@@ -80,7 +85,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <StyleGlobal />
+            <StyledLanding />
             <h1>To Do List</h1>
 
             <ToDoForm createNewToDoItem={createNewToDoItem}/>

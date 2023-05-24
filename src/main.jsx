@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from "react-router-dom";
 import { routes } from './routes';
 
-import { ThemeProvider } from "styled-components";
-
-const theme = {
-  main: 'red'
-}
+import { CustomThemeProvider } from './components/context/CustomThemeProvider';
+import { GlobalStyle } from './styles/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
+  <CustomThemeProvider>
+    <React.StrictMode>
+      <GlobalStyle />
       <RouterProvider router={routes}></RouterProvider>
-    </ThemeProvider>
-  </React.StrictMode>,
+    </React.StrictMode>
+  </CustomThemeProvider>
 )

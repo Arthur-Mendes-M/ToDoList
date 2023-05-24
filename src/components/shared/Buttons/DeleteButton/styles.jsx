@@ -1,4 +1,6 @@
-button {
+import { styled } from "styled-components";
+
+export const DelButton = styled.button`
     &.deleteButton {
         &.form {
             border-color: changeOpacity(var(--dangerRed-rgb), .5);
@@ -10,4 +12,4 @@ button {
             }        
         }
     }
-}
+`
