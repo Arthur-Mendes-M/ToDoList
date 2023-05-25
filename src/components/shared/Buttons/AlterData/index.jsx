@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 // import '../../../../styles/components/alterDataButton.scss'
 import { Button } from "./style";
 
-// Button
-
 const AlterData = (props) => {
     const navigate = useNavigate()
 

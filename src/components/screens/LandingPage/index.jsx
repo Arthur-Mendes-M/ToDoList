@@ -10,6 +10,8 @@ import { getAllToDo } from "../../../patternScripts/managementAPI/getAllToDo";
 import { ToDoForm } from "../../shared/ToDoForm";
 import { DeleteButton } from '../../shared/Buttons/DeleteButton';
 import { AlterData } from '../../shared/Buttons/AlterData'
+import { ToDoList } from "../../shared/ToDoList";
+import { ToDoItem } from "../../shared/ToDoItem";
 
 // Styles
 import { StyledLanding } from "./styles";
@@ -90,11 +92,13 @@ const LandingPage = () => {
 
             <ToDoForm createNewToDoItem={createNewToDoItem}/>
 
-            <div id="toDoList">
+            <ToDoList>
                 {
                     listItens()
                 }
-            </div>
+
+                <ToDoItem></ToDoItem>
+            </ToDoList>
         </>
     )
 }

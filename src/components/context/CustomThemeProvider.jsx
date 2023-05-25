@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { getTheme } from "../../patternScripts/themes";
+import { getTheme } from "../../styles/themes";
 import { ThemeProvider } from "styled-components";
 
 export const ThemeContext = createContext()

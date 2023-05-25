@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { styled } from "styled-components";
+import { Form } from "./styles";
 
 const initialFields = {
     name: '',
     description: ''
 }
-
-const Form = styled.form`
-    /* background-color: #e2850b; */
-`;
 
 const ToDoForm = (props) => {
     const [fields, setFields] = useState(initialFields)
