@@ -1,10 +1,10 @@
-import { ToDoContainer } from "./styled"
+import { StyledToDoContainer } from "./styled"
 
-export const ToDoList = (props) => {
+export const ToDoListContainer = (props) => {
 
     return (
-        <ToDoContainer>
+        <StyledToDoContainer>
             {props.children}
-        </ToDoContainer>
+        </StyledToDoContainer>
     )
 }

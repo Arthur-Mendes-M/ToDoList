@@ -1,7 +1,7 @@
 import { css, styled } from "styled-components";
 import { changeOpacity } from "../../../styles/variables";
 
-export const ToDoContainer = styled.div`
+export const StyledToDoContainer = styled.div`
     width: 80%;
     max-width: 500px;
     padding: 1rem;

@@ -10,7 +10,7 @@ import { getAllToDo } from "../../../patternScripts/managementAPI/getAllToDo";
 import { ToDoForm } from "../../shared/ToDoForm";
 import { DeleteButton } from '../../shared/Buttons/DeleteButton';
 import { AlterData } from '../../shared/Buttons/AlterData'
-import { ToDoList } from "../../shared/ToDoList";
+import { ToDoListContainer } from "../../shared/ToDoList";
 import { ToDoItem } from "../../shared/ToDoItem";
 
 // Styles
@@ -66,22 +66,24 @@ const LandingPage = () => {
         }
 
         return todoList.map((item, index) => (
-            <div key={index} className="toDoItem">
-                <div className="toDoDetails">
-                    <div className="title">
-                        <h5>{item.name}</h5>
-                    </div>
+            // <div key={index} className="toDoItem">
+            //     <div className="toDoDetails">
+            //         <div className="title">
+            //             <h5>{item.name}</h5>
+            //         </div>
 
-                    <div className="description">
-                        <p>{item.description}</p>
-                    </div>
-                </div>
+            //         <div className="description">
+            //             <p>{item.description}</p>
+            //         </div>
+            //     </div>
 
-                <div className="options">
-                    <AlterData link={`/toDo/${item.id}`} />
-                    <DeleteButton deleteFunction={() => deleteToDo(item.id)} />
-                </div>
-            </div>
+            //     <div className="options">
+            //         <AlterData link={`/toDo/${item.id}`} />
+            //         <DeleteButton deleteFunction={() => deleteToDo(item.id)} />
+            //     </div>
+            // </div>
+
+            <ToDoItem myKey={index} name={item.name} description={item.description}></ToDoItem>
         ))
     }
 
@@ -92,13 +94,11 @@ const LandingPage = () => {
 
             <ToDoForm createNewToDoItem={createNewToDoItem}/>
 
-            <ToDoList>
+            <ToDoListContainer>
                 {
                     listItens()
                 }
-
-                <ToDoItem></ToDoItem>
-            </ToDoList>
+            </ToDoListContainer>
         </>
     )
 }
