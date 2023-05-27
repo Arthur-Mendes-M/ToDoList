@@ -2,14 +2,14 @@ import { ToDoDetails } from "./ToDoDetails"
 import { ToDoOptions } from "./ToDoOptions"
 import { ToDoItemContainer } from "./styles"
 
-export const ToDoItem = ({myKey, name, description}) => {
+export const ToDoItem = ({id, name, description}) => {
 
     return (
-        <ToDoItemContainer key={myKey}>
+        <ToDoItemContainer>
             {/* Create ToDoDetails and ToDoOptions components */}
             {/* <h1>{myKey}</h1> */}
             <ToDoDetails title={name} description={description}></ToDoDetails>
-            <ToDoOptions></ToDoOptions>
+            <ToDoOptions toDoId={id}></ToDoOptions>
         </ToDoItemContainer>
     )
 }

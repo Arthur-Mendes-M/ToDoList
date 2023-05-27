@@ -83,7 +83,7 @@ const LandingPage = () => {
             //     </div>
             // </div>
 
-            <ToDoItem myKey={index} name={item.name} description={item.description}></ToDoItem>
+            <ToDoItem key={index} id={index} name={item.name} description={item.description}></ToDoItem>
         ))
     }
 

@@ -3,12 +3,12 @@ import { OptionsContainer } from "./styles"
 import { DeleteButton } from "../../Buttons/DeleteButton"
 import { AlterData } from "../../Buttons/AlterData"
 
-export const ToDoOptions = () => {
+export const ToDoOptions = (props) => {
 
     return (
         <OptionsContainer>
-            <AlterData></AlterData>
-            <DeleteButton></DeleteButton>
+            <AlterData toDoId={props.toDoId}></AlterData>
+            <DeleteButton toDoId={props.toDoId}></DeleteButton>
         </OptionsContainer>
     )
 }
