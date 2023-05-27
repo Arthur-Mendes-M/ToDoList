@@ -22,7 +22,3 @@ export const transitions = {
     allLinearQ: "all .15s linear",
     allLinearVQ: "all .05s ease-out"
 }
-
-export const changeOpacity = (color, opacity = 0.5) => {
-    return `rgba($color:${color}, $alpha:${opacity})`
-}

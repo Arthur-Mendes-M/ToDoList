@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// import '../../../../styles/components/alterDataButton.scss'
 import { Button } from "./style";
 
 const AlterData = (props) => {

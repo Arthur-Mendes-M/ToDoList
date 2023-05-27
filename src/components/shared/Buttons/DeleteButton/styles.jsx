@@ -1,15 +1,11 @@
 import { styled } from "styled-components";
 
 export const DelButton = styled.button`
-    &.deleteButton {
-        &.form {
-            border-color: changeOpacity(var(--dangerRed-rgb), .5);
-            color: changeOpacity(var(--color-rgb), .5);
-    
-            &:hover {
-                border-color: var(--dangerRed-completeHexa);
-                color: var(--dangerRed-completeHexa);
-            }        
-        }
-    }
+    border-color: rgba(${props => props.theme.colorsA.extraDanger}, .5);
+    color: rgba(${props => props.theme.colorsA.extraDanger}, .5);
+
+    &:hover {
+        border-color: ${props => props.theme.colors.extraDanger};
+        color: ${props => props.theme.colors.extraDanger};
+    }        
 `

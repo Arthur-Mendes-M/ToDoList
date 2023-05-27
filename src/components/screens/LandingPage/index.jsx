@@ -1,7 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
-
-// Change the global style for a file with ".JSX" extension
-import '../../../styles/main.scss'
+import React, { useContext, useEffect, useState } from "react";
 
 // API
 import { getAllToDo } from "../../../patternScripts/managementAPI/getAllToDo";
@@ -43,8 +40,6 @@ const LandingPage = () => {
             setToDoList(data)
         })
     }
-
-    // Possível problemas
 
     const listItens = () => {
         if(!todoList[0]) {

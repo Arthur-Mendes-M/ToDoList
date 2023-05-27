@@ -14,13 +14,3 @@ export const ToDoDetails = ({title, description}) => {
         </Details>
     )
 }
-
-// <div className="toDoDetails">
-    // <div className="title">
-    //  <h5>{item.name}</h5>
-    // </div>
-
-    // <div className="description">
-        // <p>{item.description}</p>
-    // </div>
-// </div> 
