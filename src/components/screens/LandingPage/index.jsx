@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 // Change the global style for a file with ".JSX" extension
 import '../../../styles/main.scss'
@@ -14,10 +14,15 @@ import { ToDoItem } from "../../shared/ToDoItem";
 // Styles
 import { StyledLanding } from "./styles";
 // ContextAPI
-import { ThemeContext } from "../../context/CustomThemeProvider";
+import { dataContext } from "../../context/CustomDataProvider";
+
+// export const toDoContext = createContext()
 
 const LandingPage = () => {
-    const {theme, handleCurrentTheme} = useContext(ThemeContext)
+    const {theme, handleCurrentTheme, dataset, handleDataset} = useContext(dataContext)
+
+    console.log(dataset)
+
     const [todoList, setToDoList] = useState([])
 
     useEffect(() => {
@@ -37,24 +42,6 @@ const LandingPage = () => {
 
         getAllToDo().then(data => setToDoList(data))
     }   
-
-    function deleteToDo(id) {
-        const deleteConfirm = confirm('Deseja mesmo deletar o to do?')
-
-        if(!deleteConfirm)
-            return
-        
-        fetch(`http://localhost:3000/toDo/${id}`, {
-            method: 'DELETE',
-            headers: {
-                'Content-type': 'application/json'
-            }
-        }).then(() => {
-            getAllToDo().then(data => {
-                setToDoList(data)
-            })
-        })
-    }
 
     const listItens = () => {
         if(!todoList[0]) {

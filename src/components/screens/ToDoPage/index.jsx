@@ -10,10 +10,10 @@ import { PreviousButton } from "../../shared/Buttons/PreviousButton";
 // Styles
 import { StyledToDoPage } from "./styles";
 // ContextAPI
-import { ThemeContext } from "../../context/CustomThemeProvider";
+import { dataContext } from "../../context/CustomDataProvider";
 
 const ToDoPage = () => {
-    const {theme, handleCurrentTheme} = useContext(ThemeContext)
+    const {theme, handleCurrentTheme} = useContext(dataContext)
     const [toDo, setToDo] = useState({})
     const {id} = useParams()
     const navigate = useNavigate()

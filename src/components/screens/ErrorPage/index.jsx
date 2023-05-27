@@ -7,10 +7,10 @@ import { PreviousButton } from "../../shared/Buttons/PreviousButton";
 // Styles
 import { StyledErrorPage } from "./styles";
 // ContextAPI
-import { ThemeContext } from "../../context/CustomThemeProvider";
+import { dataContext } from "../../context/CustomDataProvider";
 
 const ErrorPage = () => {
-    const {theme, handleCurrentTheme} = useContext(ThemeContext)
+    const {theme, handleCurrentTheme} = useContext(dataContext)
     const error = useRouteError()
     const errorType = error.statusText
 

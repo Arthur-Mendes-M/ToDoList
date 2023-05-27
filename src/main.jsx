@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from "react-router-dom";
 import { routes } from './routes';
 
-import { CustomThemeProvider } from './components/context/CustomThemeProvider';
+import { CustomDataProvider } from './components/context/CustomDataProvider';
 import { GlobalStyle } from './styles/GlobalStyle';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <CustomThemeProvider>
+  <CustomDataProvider>
     <React.StrictMode>
       <GlobalStyle />
       <RouterProvider router={routes}></RouterProvider>
     </React.StrictMode>
-  </CustomThemeProvider>
+  </CustomDataProvider>
 )
