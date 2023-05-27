@@ -8,8 +8,6 @@ import { getAllToDo } from "../../../patternScripts/managementAPI/getAllToDo";
 
 // Components
 import { ToDoForm } from "../../shared/ToDoForm";
-import { DeleteButton } from '../../shared/Buttons/DeleteButton';
-import { AlterData } from '../../shared/Buttons/AlterData'
 import { ToDoListContainer } from "../../shared/ToDoList";
 import { ToDoItem } from "../../shared/ToDoItem";
 
@@ -83,7 +81,7 @@ const LandingPage = () => {
             //     </div>
             // </div>
 
-            <ToDoItem key={index} id={index} name={item.name} description={item.description}></ToDoItem>
+            <ToDoItem key={index} id={item.id} name={item.name} description={item.description}></ToDoItem>
         ))
     }
 
