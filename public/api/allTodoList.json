@@ -1,25 +1,18 @@
 {
   "toDo": [
     {
-      "name": "Creating initial readme pattern",
-      "description": "Tarefa aleatória",
-      "date": "3/5/2023",
-      "time": "11:0",
-      "id": 3
+      "name": "Arthur Mendes Martins",
+      "description": "Descrição maravilhosa",
+      "date": "27/5/2023",
+      "time": "18:24",
+      "id": 1
     },
     {
-      "name": "Nova tarefa",
-      "description": "Tarefa criada para ser deletada",
+      "name": "Nicole Carvalho",
+      "description": "Descrição perfeita",
       "date": "27/5/2023",
-      "time": "12:58",
-      "id": 4
-    },
-    {
-      "name": "Nova tarefa 2",
-      "description": "Para ser deletada p.2",
-      "date": "27/5/2023",
-      "time": "12:58",
-      "id": 5
+      "time": "18:24",
+      "id": 2
     }
   ]
 }

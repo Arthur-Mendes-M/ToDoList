@@ -17,11 +17,7 @@ const DeleteButton = (props) => {
                 'Content-type': 'application/json'
             }
         }).then(() => {
-            // getAllToDo().then(data => {
-            //     // setToDoList(data)
-            // })
-
-            console.log('Deletado')
+            props.deleteCallback
         })
     }
 

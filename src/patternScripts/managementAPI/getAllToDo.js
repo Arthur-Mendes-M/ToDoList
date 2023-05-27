@@ -1,7 +1,5 @@
 async function getAllToDo() {
-    const result = await fetch('http://localhost:3000/toDo')
-    const data = await result.json()
-    return data
+    return await fetch('http://localhost:3000/toDo').then(response => response.json())
 }
 
 export { getAllToDo }

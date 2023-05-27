@@ -16,13 +16,8 @@ import { StyledLanding } from "./styles";
 // ContextAPI
 import { dataContext } from "../../context/CustomDataProvider";
 
-// export const toDoContext = createContext()
-
 const LandingPage = () => {
-    const {theme, handleCurrentTheme, dataset, handleDataset} = useContext(dataContext)
-
-    console.log(dataset)
-
+    const {theme, handleCurrentTheme} = useContext(dataContext)
     const [todoList, setToDoList] = useState([])
 
     useEffect(() => {
@@ -43,6 +38,14 @@ const LandingPage = () => {
         getAllToDo().then(data => setToDoList(data))
     }   
 
+    const handleToDoList = () => {
+        getAllToDo().then(data => {
+            setToDoList(data)
+        })
+    }
+
+    // Possível problemas
+
     const listItens = () => {
         if(!todoList[0]) {
             return (
@@ -51,24 +54,13 @@ const LandingPage = () => {
         }
 
         return todoList.map((item, index) => (
-            // <div key={index} className="toDoItem">
-            //     <div className="toDoDetails">
-            //         <div className="title">
-            //             <h5>{item.name}</h5>
-            //         </div>
-
-            //         <div className="description">
-            //             <p>{item.description}</p>
-            //         </div>
-            //     </div>
-
-            //     <div className="options">
-            //         <AlterData link={`/toDo/${item.id}`} />
-            //         <DeleteButton deleteFunction={() => deleteToDo(item.id)} />
-            //     </div>
-            // </div>
-
-            <ToDoItem key={index} id={item.id} name={item.name} description={item.description}></ToDoItem>
+            <ToDoItem 
+                key={index} 
+                id={item.id} 
+                name={item.name} 
+                description={item.description}
+                deleteCallback={handleToDoList}
+            ></ToDoItem>
         ))
     }
 

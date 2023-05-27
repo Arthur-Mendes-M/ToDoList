@@ -4,12 +4,12 @@ const themes = [
         colors: {
             primary: "#1f1f1f",
             secondary: "#f1f1f1",
-            terciary: "#8d9a4d"
+            terciary: "#2CD3E1"
         },
         colorsA: {
             primary: "31, 31, 31",
             secondary: "241, 241, 241",
-            terciary: "#8d9a4d"
+            terciary: "44, 211, 225"
         }
     },
     {
@@ -17,12 +17,12 @@ const themes = [
         colors: {
             primary: "#f1f1f1",
             secondary: "#1f1f1f",
-            terciary: "#8d9a4d"
+            terciary: "#2CD3E1"
         },
         colorsA: {
             primary: "241, 241, 241",
             secondary: "31, 31, 31",
-            terciary: "#8d9a4d"
+            terciary: "44, 211, 225"
         }
     }
 ]
