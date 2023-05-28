@@ -8,6 +8,11 @@ export const Details = styled.div`
 
 export const Title = styled.div`
     font-weight: bold;
+    max-width: 200px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `
 
 export const Description = styled.p`

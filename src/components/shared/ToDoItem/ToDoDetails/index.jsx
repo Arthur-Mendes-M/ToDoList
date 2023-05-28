@@ -4,11 +4,11 @@ export const ToDoDetails = ({title, description}) => {
 
     return (
         <Details>
-            <Title>
+            <Title title={title}>
                 {title}
             </Title>
 
-            <Description>
+            <Description title={description}>
                 {description}
             </Description>
         </Details>

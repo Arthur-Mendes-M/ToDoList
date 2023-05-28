@@ -10,12 +10,10 @@ const AbsoluteTopLeftContainer = styled.div`
 `
 
 const PrevButton = styled.button`
-    &.prevButton {
-        &.history {
-            &:hover svg {
-                transform: rotate(-360deg);
-            }
-        }
+    width: 100%;
+    
+    &:hover svg {
+        transform: rotate(-360deg);
     }
 `
 

@@ -16,12 +16,15 @@ const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${props => props.theme.colors.primary};
         color: ${props => props.theme.colors.secondary};
-        padding: 5% 0;
+        font-family: monospace;
+
+        @media(min-width: 350px) {
+            padding: 5%;            
+        }
     }
 
     #root {
         ${flexBox('column', undefined, undefined, 0.5)};
-        text-align: center;
     }
 
     /* Resets */
@@ -56,6 +59,7 @@ const GlobalStyle = createGlobalStyle`
         color: rgba(${props => props.theme.colorsA.secondary}, .5);
         cursor: pointer;
         transition: ${transitions.allLinear};
+        font-family: monospace;
 
         &:hover {
             border-color: ${props => props.theme.colors.secondary};
@@ -77,6 +81,7 @@ const GlobalStyle = createGlobalStyle`
         color: rgba(${props => props.theme.colorsA.secondary}, .5);
         cursor: pointer;
         transition: ${transitions.allLinear};
+        font-family: monospace;
 
         &:hover, &:focus {
             border-color: ${props => props.theme.colors.secondary};

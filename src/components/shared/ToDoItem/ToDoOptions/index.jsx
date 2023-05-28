@@ -8,7 +8,7 @@ export const ToDoOptions = (props) => {
     return (
         <OptionsContainer>
             <AlterData toDoId={props.toDoId}></AlterData>
-            <DeleteButton toDoId={props.toDoId}></DeleteButton>
+            <DeleteButton toDoId={props.toDoId} deleteCallback={props.deleteCallback}></DeleteButton>
         </OptionsContainer>
     )
 }

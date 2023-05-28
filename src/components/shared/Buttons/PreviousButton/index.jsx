@@ -11,7 +11,7 @@ const PreviousButton = (props) => {
         if(props.container) {
             return (
                 <AbsoluteTopLeftContainer>
-                    <PrevButton className="prevButton history" type="button" onClick={() => navigate(-1)}>
+                    <PrevButton type="button" onClick={() => navigate(-1)}>
                         {
                             props.children ? props.children : 'Voltar para a página anterior!'
                         }
@@ -20,7 +20,7 @@ const PreviousButton = (props) => {
             )
         } else {
             return (
-                <PrevButton className="prevButton history" type="button" onClick={() => navigate(-1)}>
+                <PrevButton type="button" onClick={() => navigate(-1)}>
                     {
                         props.children ? props.children : 'Voltar para a página anterior!'
                     }

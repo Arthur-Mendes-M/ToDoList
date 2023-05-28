@@ -15,7 +15,7 @@ const DeleteButton = (props) => {
                 'Content-type': 'application/json'
             }
         }).then(() => {
-            props.deleteCallback
+            props.deleteCallback()
         })
     }
 
