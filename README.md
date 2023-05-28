@@ -57,10 +57,8 @@
 </h2>
 
 <div>
-  
 
-https://user-images.githubusercontent.com/75858153/235903645-f9d85b72-dab0-4d3a-8020-dcbd5dcab3ff.mov
-
+https://github.com/Arthur-Mendes-M/Fixing-react-learning/assets/75858153/183d9b05-669e-4daa-8a7d-6d2a872aaab8
 
 </div>
 
