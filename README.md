@@ -46,6 +46,10 @@
   <li>
     <h4>View all details for a specific "To Do"</h4>
   </li>
+  
+   <li>
+    <h4>Change application theme between dark and light</h4>
+  </li>
 </ul>
 
 <br />
