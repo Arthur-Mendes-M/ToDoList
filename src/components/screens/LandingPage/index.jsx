@@ -10,11 +10,8 @@ import { ToDoItem } from "../../shared/ToDoItem";
 
 // Styles
 import { StyledLanding } from "./styles";
-// ContextAPI
-import { dataContext } from "../../context/CustomDataProvider";
 
 const LandingPage = () => {
-    const {theme, handleCurrentTheme} = useContext(dataContext)
     const [todoList, setToDoList] = useState([])
 
     useEffect(() => {

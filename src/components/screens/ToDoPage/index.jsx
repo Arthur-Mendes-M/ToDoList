@@ -13,11 +13,8 @@ import { ThemeButtons } from "../../shared/Buttons/ThemeButtons";
 
 // Styles
 import { StyledToDoPage } from "./styles";
-// ContextAPI
-import { dataContext } from "../../context/CustomDataProvider";
 
 const ToDoPage = () => {
-    const {theme, handleCurrentTheme} = useContext(dataContext)
     const [toDo, setToDo] = useState({})
     const {id} = useParams()
     const navigate = useNavigate()
