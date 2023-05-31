@@ -51,7 +51,7 @@ const ToDoPage = () => {
             return
         }
         
-        fetch(`http://localhost:3000/toDo/${toDo.id}`, {
+        fetch(`https://to-do-json-database.vercel.app/toDo/${toDo.id}`, {
             method: "PATCH",
             headers: {
                 'Content-type': 'application/json'
