@@ -9,7 +9,7 @@ const DeleteButton = (props) => {
         if(!deleteConfirm)
             return
         
-        fetch(`https://to-do-json-database-rhl19x6mh-amendes.vercel.app/toDo/${props.toDoId}`, {
+        fetch(`https://to-do-json-database.vercel.app/toDo/${props.toDoId}`, {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json'
