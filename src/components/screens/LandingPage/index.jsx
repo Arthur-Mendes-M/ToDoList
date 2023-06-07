@@ -21,7 +21,7 @@ const LandingPage = () => {
     }, [])
 
     async function createNewToDoItem(toDo) {
-        await fetch('https://to-do-json-database.vercel.app/toDo', {
+        await fetch('https://json-database-kzd0.onrender.com/toDo', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
