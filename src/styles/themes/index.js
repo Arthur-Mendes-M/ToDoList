@@ -33,16 +33,21 @@ const themes = [
 
 const defaultTheme = themes.find(theme => theme.name === "darkTheme")
 
-const getTheme = (themeName = defaultTheme) => {
-    let currentTheme = defaultTheme
-
-    themes.forEach(theme => {
-        if(theme.name === themeName) {
-            currentTheme = theme
-        }
-    })
-
-    return currentTheme
+const getTheme = () => {
+    if(localStorage.getItem('theme')) {
+        return JSON.parse(localStorage.getItem('theme'))
+    } else {
+        localStorage.setItem('theme', JSON.stringify(defaultTheme))
+        return JSON.parse(localStorage.getItem('theme'))
+    }
 }
 
-export { getTheme }
+const setTheme = (themeName = defaultTheme) => {
+    themes.forEach(theme => {
+        theme.name === themeName ? localStorage.setItem('theme', JSON.stringify(theme)) : localStorage.setItem('theme', JSON.stringify(defaultTheme))
+    })
+
+    return JSON.parse(localStorage.getItem('theme'))
+}
+
+export { getTheme, setTheme }

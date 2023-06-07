@@ -41,7 +41,7 @@ const LandingPage = () => {
     const listItens = () => {
         if(!todoList[0]) {
             return (
-                <p>Não existe nenhuma tarefa ainda, crie um! :)</p>
+                <p>There is no task yet, create one! :)</p>
             )
         }
 

@@ -74,17 +74,17 @@ const ToDoPage = () => {
                 <Container>
                     <Title blurFunction={() => changeData(toDo.name, 'name')}>{toDo.name}</Title>
 
-                    <p>Criado as <i>{toDo.time}</i> do dia {toDo.date}</p>
+                    <p>Created at <i>{toDo.time}</i> o'clock on {toDo.date}</p>
                 </Container>
 
                 <Container>
                     <Description blurFunction={() => changeData(toDo.description, 'description')}>
-                        {toDo.description ? toDo.description : <i>{'Nenhuma descrição adicionada'}</i>}
+                        {toDo.description ? toDo.description : <i>{'Any description'}</i>}
                     </Description>
                 </Container>
 
                 <Container>
-                    <button className="changeButton" onClick={saveChanges}>💾 Salvar alterações</button>
+                    <button className="changeButton" onClick={saveChanges}>💾 Save editions</button>
                 </Container>
 
                 <ThemeButtons></ThemeButtons>

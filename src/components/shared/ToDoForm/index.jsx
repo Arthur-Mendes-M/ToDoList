@@ -32,14 +32,14 @@ const ToDoForm = (props) => {
         <>
             <Form onSubmit={createNewToDoItem}>
                 <div className="field">
-                    <input type="text" name="name" id="name" placeholder="Título da tarefa" value={fields.name} onChange={handleFields} required autoFocus />
+                    <input type="text" name="name" id="name" placeholder="To Do title" value={fields.name} onChange={handleFields} required autoFocus />
                 </div>
 
                 <div className="field">
-                    <textarea type="text" name="description" id="description" placeholder="Descrição da tarefa" value={fields.description} onChange={handleFields} /> 
+                    <textarea type="text" name="description" id="description" placeholder="To Do description" value={fields.description} onChange={handleFields} /> 
                 </div>
 
-                <input type="submit" value='Criar' className="submitInput" />
+                <input type="submit" value='Create' className="submitInput" />
             </Form>
         </>
     )
