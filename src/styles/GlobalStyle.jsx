@@ -14,12 +14,15 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        ${flexBox("column", "unset", "space-between")}
         background-color: ${props => props.theme.colors.primary};
         color: ${props => props.theme.colors.secondary};
         font-family: monospace;
 
+        min-height: 100vh;
+
         @media(min-width: 350px) {
-            padding: 5%;            
+            padding: 2% 5%;            
         }
     }
 
@@ -27,10 +30,19 @@ const GlobalStyle = createGlobalStyle`
         ${flexBox('column', undefined, undefined, 0.5)};
     }
 
+    #author {
+        ${flexBox(undefined, undefined, undefined, 2)}
+
+        #logo {
+            ${flexBox(undefined, undefined, undefined, .8)}
+        }
+    }
+
     /* Resets */
 
     a {
-        text-decoration-color: rgba(${props => props.theme.colorsA.secondary}, .5);
+        /* text-decoration-color: rgba(${props => props.theme.colorsA.secondary}, .5); */
+        text-decoration: none;
         color: ${props => props.theme.colors.secondary};
         transition: ${transitions.allLinearQ};
 
@@ -38,12 +50,6 @@ const GlobalStyle = createGlobalStyle`
             transform: scale(1.05);
             text-decoration-color: ${props => props.theme.colors.terciary};        
         }
-    }
-
-    p {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     svg {

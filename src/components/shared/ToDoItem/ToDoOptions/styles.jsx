@@ -2,5 +2,5 @@ import { styled } from "styled-components";
 import { flexBox } from "../../../../styles/variables";
 
 export const OptionsContainer = styled.div`
-    ${flexBox(undefined, undefined, undefined, 1.5, "wrap", "0 1 auto")}
+    ${flexBox(undefined, undefined, undefined, 1.5, "wrap", "1 0 auto")}
 `

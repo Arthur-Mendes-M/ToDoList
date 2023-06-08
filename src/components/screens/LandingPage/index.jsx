@@ -8,6 +8,8 @@ import { ToDoForm } from "../../shared/ToDoForm";
 import { ToDoListContainer } from "../../shared/ToDoList";
 import { ToDoItem } from "../../shared/ToDoItem";
 
+import { AlertCaution } from "../../shared/Buttons/AlertFloatButton";
+
 // Styles
 import { StyledLanding } from "./styles";
 
@@ -59,6 +61,7 @@ const LandingPage = () => {
     return (
         <>
             <StyledLanding />
+            <AlertCaution />
             <h1>To Do List</h1>
 
             <ToDoForm createNewToDoItem={createNewToDoItem}/>
