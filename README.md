@@ -62,7 +62,7 @@
 
 <div>
 
-https://github.com/Arthur-Mendes-M/Fixing-react-learning/assets/75858153/183d9b05-669e-4daa-8a7d-6d2a872aaab8
+https://github.com/Arthur-Mendes-M/Fixing-react-learning/assets/75858153/b03bde6c-a925-45d6-a558-66943fbc2e91
 
 </div>
 
