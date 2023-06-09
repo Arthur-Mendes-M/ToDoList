@@ -9,14 +9,15 @@
 
 <h4>Project status</h4>
 
-🚧 <i>Under development</i> 🚧
-<!-- :confetti_ball: <i>Finshed</i> :confetti_ball: -->
+<!-- 🚧 <i>Under development</i> 🚧 -->
+:confetti_ball: <i>Finshed</i> :confetti_ball:
 <!-- https://github.com/markdown-templates/markdown-emojis -->
 <br />
 <h2>👣 Content guide</h2>
 
 * [About](#about)
 * [Features](#features)
+* [Deploy](#deploy)
 * [Design](#design)
 * [Guide](#guide)
   * [Initializing the project](#initializing)
@@ -51,6 +52,23 @@
     <h4>Change application theme between dark and light</h4>
   </li>
 </ul>
+
+<br />
+<br />
+
+<h2 id="deploy">
+  🌐 Deploy
+  <div align="right"><a href="#about">🔝</a></div>  
+</h2>
+
+<div align="center">
+  <h3>This project contain two deploys, one is mock database (Deployed on Render platform) and other is the application (Deployed on Vercel platform). I used this method for simulate a back-end aplication.</h3>
+  
+  <h4>🗄 Render (I used for "JSON database" - Mock DB)</h4>
+  <h4>📱 Vercel (I used for apliction - To Do List)</h4>
+  
+  <h3><a href="https://fixing-react-learning.vercel.app/">🚀 Test the application 🚀</a></h3>
+</div>
 
 <br />
 <br />
