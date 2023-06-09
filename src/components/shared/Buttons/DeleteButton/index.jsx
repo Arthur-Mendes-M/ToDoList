@@ -4,7 +4,7 @@ import { DelButton } from "./styles"
 
 const DeleteButton = (props) => {
     const deleteToDo = () => {
-        const deleteConfirm = confirm('Deseja mesmo deletar o to do?')
+        const deleteConfirm = confirm('Do you really want to delete to do?')
 
         if(!deleteConfirm)
             return
