@@ -136,16 +136,16 @@ https://github.com/Arthur-Mendes-M/Fixing-react-learning/assets/75858153/b03bde6
 <br />
 
 <div align="center">
-  <a href="google.com">
+  <a href="[google.com](https://github.com/Arthur-Mendes-M)">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50"/>
   </a> 
-  <a href="google.com">
+  <a href="[google.com](https://github.com/Arthur-Mendes-M)">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="50"/> 
   </a> 
-  <a href="google.com">
+  <a href="[google.com](https://github.com/Arthur-Mendes-M)">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/> 
   </a> 
-  <a href="google.com">
+  <a href="[google.com](https://github.com/Arthur-Mendes-M)">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="50"/> 
   </a> 
 </div>
